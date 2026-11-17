@@ -20,7 +20,7 @@ Antes de commitar, a primeira versão escrita da fachada por nós foi submetida 
 - **Problema:** Mesmo com `.idea`, `out/` e `*.class` listados no `.gitignore`, esses arquivos continuaram aparecendo no GitHub.
 - **Apoio da IA:** A IA explicou que o `.gitignore` só vale para arquivos ainda não rastreados. Como os arquivos já tinham sido commitados antes de o `.gitignore` ser atualizado, o Git continuava rastreando. A solução foi removê-los do índice com `git rm -r --cached .idea out`, sem apagar os arquivos locais, e commitar a correção.
 - **Prompt utilizado:** "meu gitignore ta assim pq que ainda ta aparecendo no github?" (com a captura de tela do GitHub e o conteúdo do `.gitignore`)
-- **Ajuste nosso:** Executamos a remoção do índice e criamos um commit de `fix`. Os arquivos continuam no histórico antigo, o que não atrapalha a leitura da evolução da solução. Nas próximas questões, o `.gitignore` será criado antes do primeiro commit. **[CONFIRMAR: mensagem do commit que vocês usaram]**
+- **Ajuste nosso:** Executamos a remoção do índice e criamos um commit de `fix`. Os arquivos continuam no histórico antigo, o que não atrapalha a leitura da evolução da solução. Nas próximas questões, o `.gitignore` será criado antes do primeiro commit (obs: o repositorio original com os erros de versionamento ainda existe mas esse foi criado de forma mais limpa para facilitar a leitura da evolução da solução via o histórico de commits).
 
 ### 2.4. Elaboração da Documentação
 - **Apoio da IA:** Geração dos modelos de `README.md` (descrição do problema, mapeamento do padrão Facade e instruções de execução) e deste relatório.
